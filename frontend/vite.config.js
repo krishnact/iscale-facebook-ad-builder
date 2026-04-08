@@ -19,5 +19,11 @@ export default defineConfig({
         secure: false,
       }
     }
+  },
+  preview: {
+    allowedHosts: [
+      process.env.RAILWAY_PUBLIC_DOMAIN || 'localhost',
+      '*.up.railway.app'
+    ]
   }
 })
